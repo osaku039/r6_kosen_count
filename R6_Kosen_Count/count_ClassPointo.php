@@ -10,7 +10,7 @@ if (!empty($_POST)) {
     if (isset($_POST['star_1'])) {
     $sql = "UPDATE `4_mi` SET count = count + 1 WHERE id = 1";
     $res = $mysqli->query($sql);
-    header('Location: thank.php');   
+    //header('Location: thank.php');   
     } else if (isset($_POST['star_2'])) {
     $sql = "UPDATE `4_mi` SET count = count + 1 WHERE id = 2";
     $res = $mysqli->query($sql);
@@ -39,7 +39,7 @@ if (!empty($_POST)) {
                 <?php echo "$class_year -$class_number "; ?>
             </div>
             <div class="vote">
-                <form action="thank.php" method="post">
+                <form action="" method="post">
                     <input type="submit" name="star_1" value="☆" />
                     <input type="submit" name="star_2" value="☆☆" />
                     <input type="submit" name="star_3" value="☆☆☆" />
