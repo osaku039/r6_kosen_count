@@ -1,3 +1,1 @@
-# floor_map
-
-## This is a floor map of NITOC
+# r6_kosen_count
