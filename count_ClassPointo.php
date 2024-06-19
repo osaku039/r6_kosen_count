@@ -11,7 +11,7 @@ if (!empty($_POST)) {  //条件式によって中身が入力されているか�
     $sql = "UPDATE `4_mi` SET count = count + 1 WHERE id = 1";  //sql文を用いて4_miというテーブルの中にあるidの値が1のカラムに値を1+するという宣言
     $res = $mysqli->query($sql);  //queryを用いてsql文を使用
     //下記コメントアウトの原因:上記のsql文を使用する前にサイト移動しているためDBへ値が更新されない
-    //header('Location: thank.php'); //headerを用いてthank.phpへ移動。
+    header('Location: thank.php'); //headerを用いてthank.phpへ移動。
     } else if (isset($_POST['star_2'])) { //同文
     $sql = "UPDATE `4_mi` SET count = count + 1 WHERE id = 2";
     $res = $mysqli->query($sql);
