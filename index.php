@@ -10,6 +10,9 @@ if (!empty($_POST)) {
     if ($_POST['class_year'] === "") {
         $error['class_year'] = "blank";
     }
+    elseif (!$_POST['class_year'] === [1-5]) {
+        $error['class_year'] = "gai";
+    }
 
     /* エラーがなければ次のページへ */
     if (!isset($error)) {
