@@ -40,7 +40,7 @@ if (!empty($_POST)) {
             <div class="control"> <!--divクラスがcontrol-->
                 <label for="class_year">学年　例:3年であれば3のみを入力してください<span class="required">必須</span></label>
                 <input type="text" name="class_year">
-                <?php if (!empty($error["class_year"]) && $error['class_year'] === 'blank'): ?>  //入力されていなかった場合
+                <?php if (!empty($error["class_year"]) && $error['class_year'] === 'blank'): ?>  <!--入力されていなかった場合-->
                     <p class="error">＊クラス名を入力してください。</p>
                 <?php endif ?>
             </div>
@@ -48,7 +48,7 @@ if (!empty($_POST)) {
             <div class="control">
                 <label for="class_number">クラス　例：1組の場合、「1」　メディアであれば「mi」と入力してください<span class="required">必須</span></label>
                 <input type="text" name="class_number">
-                <?php if (!empty($error["class_number"]) && $error['class_number'] === 'blank'): ?> //入力されていなかった場合
+                <?php if (!empty($error["class_number"]) && $error['class_number'] === 'blank'): ?> <!--入力されていなかった場合-->
                     <p class="error">＊クラス名を入力してください</p>
                 <?php endif ?>
             </div>
