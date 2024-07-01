@@ -10,7 +10,7 @@ if (!empty($_POST)) {
     if ($_POST['class_year'] === "") {
         $error['class_year'] = "blank";
     }
-    elseif (!$_POST['class_year'] === [1-5]) {
+    elseif (!$_POST['class_year'] !== [1-5]) {
         $error['class_year'] = "gai";
     }
 
@@ -42,6 +42,8 @@ if (!empty($_POST)) {
                 <input type="text" name="class_year">
                 <?php if (!empty($error["class_year"]) && $error['class_year'] === 'blank'): ?>  <!--入力されていなかった場合-->
                     <p class="error">＊クラス名を入力してください。</p>
+                <?php elseif (!empty($error["class_year"]) && $error['class_year'] === 'gai') : ?>
+                    <p class="error">＊範囲外の値です。</p>
                 <?php endif ?>
             </div>
             
