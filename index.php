@@ -4,14 +4,21 @@ session_start();  //セッション開始
 
 if (!empty($_POST)) {
     /* 入力情報の不備を検知 */
-    if ($_POST['class_number'] === "") {
-        $error['class_number'] = "blank";
-    }
     if ($_POST['class_year'] === "") {
         $error['class_year'] = "blank";
     }
-    elseif (!$_POST['class_year'] !== [1-5]) {
+    elseif (!in_array($_POST['class_year'], ['1', '2', '3', '4', '5'])) {
         $error['class_year'] = "gai";
+    }
+    
+    if ($_POST['class_number'] === "") {
+        $error['class_number'] = "blank";
+    }
+    elseif (in_array($_POST['class_year'], ['1', '2']) && !in_array($_POST['class_number'], ['1', '2', '3', '4'])) {
+        $error['class_number'] = "gai";
+    }
+    elseif (in_array($_POST['class_year'], ['3', '4', '5']) && !in_array($_POST['class_number'], ['mi', 'br', 'ic', 'ms'])) {
+        $error['class_number'] = "gai";
     }
 
     /* エラーがなければ次のページへ */
@@ -52,6 +59,8 @@ if (!empty($_POST)) {
                 <input type="text" name="class_number">
                 <?php if (!empty($error["class_number"]) && $error['class_number'] === 'blank'): ?> <!--入力されていなかった場合-->
                     <p class="error">＊クラス名を入力してください</p>
+                <?php elseif (!empty($error["class_number"]) && $error['class_number'] === 'gai') : ?>
+                    <p class="error">＊範囲外の値です。</p>
                 <?php endif ?>
             </div>
 
