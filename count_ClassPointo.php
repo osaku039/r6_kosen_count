@@ -35,20 +35,40 @@ if (!empty($_POST)) {  //条件式によって中身が入力されているか�
 <!DOCTYPE html>
 <html>
     <head>
-        <body>
-            <div class="Class_name"> <!--divのクラスネームがClass_name-->
-                <?php echo "$class_year -$class_number "; ?> <!--セッションから得た値を表示-->
-            </div> 
-            <div class="Count">  <!--divのクラスネームがCount-->
-                <form action="" method="post">  <!--formアクション-->
-                    <input type="submit" name="star_1" value="☆" />  <!--ボタン作成　nameがstar_1になる。-->
-                    <input type="submit" name="star_2" value="☆☆" />  <!--以下同文-->
-                    <input type="submit" name="star_3" value="☆☆☆" />
-                    <input type="submit" name="star_4" value="☆☆☆☆" />
-                    <input type="submit" name="star_5" value="☆☆☆☆☆" />
-                </form>
-            </div>
-            
-        </body>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+        <title>クラス杯投票システム</title>
+        <link href="https://unpkg.com/sanitize.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/style_ClassPointo.css">
     </head>
+
+    <body>
+
+        <div class="review">
+            <p>レビュー</p>
+            <div class="stars">
+                <span>
+                    <input id="review01" type="radio" name="review"><label for="review01">★</label>
+                    <input id="review02" type="radio" name="review"><label for="review02">★</label>
+                    <input id="review03" type="radio" name="review"><label for="review03">★</label>
+                    <input id="review04" type="radio" name="review"><label for="review04">★</label>
+                    <input id="review05" type="radio" name="review"><label for="review05">★</label>
+                </span>
+            </div>
+        </div>
+
+        <div class="Class_name"> <!--divのクラスネームがClass_name-->
+            <?php echo "$class_year -$class_number "; ?> <!--セッションから得た値を表示-->
+        </div> 
+        <div class="Count">  <!--divのクラスネームがCount-->
+            <form action="" method="post">  <!--formアクション-->
+                <input type="submit" name="star_1" value="☆" />  <!--ボタン作成　nameがstar_1になる。-->
+                <input type="submit" name="star_2" value="☆☆" />  <!--以下同文-->
+                <input type="submit" name="star_3" value="☆☆☆" />
+                <input type="submit" name="star_4" value="☆☆☆☆" />
+                <input type="submit" name="star_5" value="☆☆☆☆☆" />
+            </form>
+        </div>
+        
+    </body>
 </html>
