@@ -13,6 +13,10 @@
             <h1>クラス杯投票システム</h1>
             <p>クラス名を選んでください</p>
             <br>
+            <!-- < class="class_table">
+                <td><button type="submit" class="btn">確認する</button></td>
+                <td><button type="submit" class="btn">確認する</button></td>
+            </div> -->
             
 
 
