@@ -6,7 +6,7 @@ $class_year = ($_SESSION['join']['class_year']);  //index.phpから受け取っ�
 $class_number = ($_SESSION['join']['class_number']);  //index.phpから受け取った入力内容をセッションで受け取リ変数に格納
 
 
-$Class = "" + $class_year + "" + $class_number;
+$class = $class_year . "_" . $class_number;
 
 if (!empty($_POST)) {  //条件式によって中身が入力されているか確認している。
     if (isset($_POST['star_1'])) {  //☆１を押された時のif文

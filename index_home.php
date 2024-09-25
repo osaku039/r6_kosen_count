@@ -14,7 +14,7 @@
             <dic class="class_table">
                 <table>
                     <tr>
-                        <td><button type="submit" class="btn">確認する</button></td>
+                        <td><button type="submit" class="btn">1-1</button></td>
                         <td><button type="submit" class="btn">確認する</button></td>
                         <td><button type="submit" class="btn">確認する</button></td>
                         <td><button type="submit" class="btn">確認する</button></td>
