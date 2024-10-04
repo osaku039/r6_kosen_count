@@ -18,19 +18,19 @@ if (!empty($_POST)) {  //条件式によって中身が入力されているか�
     } else if (isset($_POST['star_2'])) { //同文
     $sql = "UPDATE $class SET count = count + 1 WHERE id = 2";
     $res = $mysqli->query($sql);
-    header('Location: thank.php');
+    header('Location: ../thank.php');
     } else if (isset($_POST['star_3'])) {
     $sql = "UPDATE $class SET count = count + 1 WHERE id = 3";
     $res = $mysqli->query($sql);
-    header('Location: thank.php');
+    header('Location: ../thank.php');
     } else if (isset($_POST['star_4'])) {
     $sql = "UPDATE $class SET count = count + 1 WHERE id = 4";
     $res = $mysqli->query($sql);
-    header('Location: thank.php');
+    header('Location: ../thank.php');
     } else if (isset($_POST['star_5'])) {
     $sql = "UPDATE $class SET count = count + 1 WHERE id = 5";
     $res = $mysqli->query($sql);
-    header('Location: thank.php');
+    header('Location: ../thank.php');
 }
 }
 ?>
