@@ -44,7 +44,7 @@ if (!empty($_POST)) {  //条件式によって中身が入力されているか�
 
     <body>
 
-        <div class="review">
+        <!-- <div class="review">
             <p>レビュー</p>
             <div class="stars">
                 <span>
@@ -55,7 +55,7 @@ if (!empty($_POST)) {  //条件式によって中身が入力されているか�
                     <input id="review05" type="radio" name="review"><label for="review05">★</label>
                 </span>
             </div>
-        </div>
+        </div> -->
 
         <div class="Class_name"> <!--divのクラスネームがClass_name-->
             <?php echo "$class_year -$class_number "; ?> <!--セッションから得た値を表示-->
