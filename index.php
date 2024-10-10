@@ -17,7 +17,7 @@ if (!empty($_POST)) {
     /* エラーがなければ次のページへ */
     if (!isset($error)) {
         $_SESSION['join'] = $_POST;   // フォームの内容をセッションで保存
-        header('Location: count_ClassPointo.php');   // check.phpへ移動
+        header('Location: count_ClassPoint.php');   // check.phpへ移動
         exit(); //セッションを閉じる
     }
 }
