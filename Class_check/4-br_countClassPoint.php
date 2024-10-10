@@ -1,3 +1,4 @@
+
 <?php
 $mysqli = new mysqli('localhost:3305', 'root', '', 'count_classpoint');  //DBとの接続
 session_start(); //セッションの開始
