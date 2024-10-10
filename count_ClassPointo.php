@@ -57,9 +57,9 @@ if (!empty($_POST)) {  //条件式によって中身が入力されているか�
             </div>
         </div> -->
 
-        <div class="Class_name"> <!--divのクラスネームがClass_name-->
-            <?php echo "$class_year -$class_number "; ?> <!--セッションから得た値を表示-->
-        </div> 
+        <!-- <div class="Class_name"> divのクラスネームがClass_name -->
+            <!-- <?php echo "$class_year -$class_number "; ?> セッションから得た値を表示 -->
+        <!-- </div>  -->
         <div class="Count">  <!--divのクラスネームがCount-->
             <form action="" method="post">  <!--formアクション-->
                 <input type="submit" name="star_1" value="☆" />  <!--ボタン作成　nameがstar_1になる。-->
