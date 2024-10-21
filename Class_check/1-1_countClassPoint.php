@@ -38,7 +38,12 @@ if (!empty($_POST)) {  //条件式によって中身が入力されているか�
 <!DOCTYPE html>
 <html>
     <head>
-        <body>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+        <title>クラス杯投票システム</title>
+        <link rel="stylesheet" href="../css/style_ClassPointo.css">
+    </head>
+    <body>
             <div class="Class_name"> <!--divのクラスネームがClass_name-->
                 <?php echo "$class"; ?> <!--セッションから得た値を表示-->
             </div> 
@@ -51,7 +56,17 @@ if (!empty($_POST)) {  //条件式によって中身が入力されているか�
                     <input type="submit" name="star_5" value="☆☆☆☆☆" />
                 </form>
             </div>
-            
-        </body>
-    </head>
+
+            <div class="review">
+                <div class="stars">
+                    <span>
+                        <input id="review01" type="radio" name="review"><label for="review01">★</label>
+                        <input id="review02" type="radio" name="review"><label for="review02">★</label>
+                        <input id="review03" type="radio" name="review"><label for="review03">★</label>
+                        <input id="review04" type="radio" name="review"><label for="review04">★</label>
+                        <input id="review05" type="radio" name="review"><label for="review05">★</label>
+                    </span>
+                </div>
+            </div>
+    </body>
 </html>

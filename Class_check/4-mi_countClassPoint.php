@@ -38,6 +38,7 @@ if (!empty($_POST)) {  //条件式によって中身が入力されているか�
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="../css\style_NewIndex.css">
         <body>
             <div class="Class_name"> <!--divのクラスネームがClass_name-->
                 <?php echo "$class"; ?> <!--セッションから得た値を表示-->

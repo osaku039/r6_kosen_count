@@ -22,6 +22,12 @@ body {
     font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
 }
 
+.circle img {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;  /* 円形にする */
+}
+
 h1 {
     background: #c4e7ff;
     border: solod 3px #0a2c42;

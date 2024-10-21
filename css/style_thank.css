@@ -1,12 +1,34 @@
-/* <div class="review">
-            <p>レビュー</p>
-            <div class="stars">
-                <span>
-                    <input id="review01" type="radio" name="review"><label for="review01">★</label>
-                    <input id="review02" type="radio" name="review"><label for="review02">★</label>
-                    <input id="review03" type="radio" name="review"><label for="review03">★</label>
-                    <input id="review04" type="radio" name="review"><label for="review04">★</label>
-                    <input id="review05" type="radio" name="review"><label for="review05">★</label>
-                </span>
-            </div>
-        </div> */
+.p-fv {
+    width: 100%;
+    height: 700px;
+  
+    /* 背景画像を表示 */
+    background-image: url(../thank_back.jpg);
+  
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .p-fv::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .p-fv__copy {
+    position: relative;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 56px;
+    font-weight: bold;
+  }
