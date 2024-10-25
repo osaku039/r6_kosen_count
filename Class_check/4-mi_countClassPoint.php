@@ -38,21 +38,16 @@ if (!empty($_POST)) {  //条件式によって中身が入力されているか�
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="../css\style_NewIndex.css">
-        <body>
-            <div class="Class_name"> <!--divのクラスネームがClass_name-->
-                <?php echo "$class"; ?> <!--セッションから得た値を表示-->
-            </div> 
-            <div class="Count">  <!--divのクラスネームがCount-->
-                <form action="" method="post">  <!--formアクション-->
-                    <input type="submit" name="star_1" value="☆" />  <!--ボタン作成　nameがstar_1になる。-->
-                    <input type="submit" name="star_2" value="☆☆" />  <!--以下同文-->
-                    <input type="submit" name="star_3" value="☆☆☆" />
-                    <input type="submit" name="star_4" value="☆☆☆☆" />
-                    <input type="submit" name="star_5" value="☆☆☆☆☆" />
-                </form>
-            </div>
-            
-        </body>
+        <link rel="stylesheet" href="../css\style_ClassPointo.css">
     </head>
+    <body>
+            <h1>4-MIの点数をタッチしてください</h1>
+                <form action="" method="post" class="bottom">  
+                    <input type="submit" class="btn" name="star_1" value="1" />  <!--ボタン作成　nameがstar_1になる。-->
+                    <input type="submit" class="btn" name="star_2" value="2" />  <!--以下同文-->
+                    <input type="submit" class="btn" name="star_3" value="3" />
+                    <input type="submit" class="btn" name="star_4" value="4" />
+                    <input type="submit" class="btn" name="star_5" value="5" />
+                </form>
+        </body>
 </html>

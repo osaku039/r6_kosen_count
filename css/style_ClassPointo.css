@@ -1,23 +1,32 @@
-.stars span{
-    display: flex;               /* 要素をフレックスボックスにする */
-    flex-direction: row-reverse; /* 星を逆順に並べる */
-    justify-content: flex-end;   /* 逆順なので、左寄せにする */
-  }
-  
-  .stars input[type='radio']{
-    display: none;               /* デフォルトのラジオボタンを非表示にする */
-  }
-  
-  .stars label{
-    color: #e5e5e5;              /* 未選択の星をグレー色に指定 */
-    font-size: 30px;             /* 星の大きさを30pxに指定 */
-    padding: 0 5px;              /* 左右の余白を5pxに指定 */
-    cursor: pointer;             /* カーソルが上に乗ったときに指の形にする */
-  }
-  
-  .stars label:hover,
-  .stars label:hover ~ label,
-  .stars input[type='radio']:checked ~ label{
-    color: #0a2c42;              /* 選択された星以降をすべて紺にする */
-  }
-  
+.btn {
+  background-color: black;
+  color: #0ff;
+  padding: 15px 30px;
+  border: 2px solid #0ff;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.bottom {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px; 
+}
+
+h1 {
+  font-size: 50px;
+  color: #0ff;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+  text-align: center;
+  margin-top: 15%;
+}
+
+body {
+  background-image: url('../neon.JPG');
+}
